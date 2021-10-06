@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    font: normal normal 1em Arial, Helvetica, sans-serif;
+    color: #F0C61D;
+    background-color: #0A11A3;
+}
+
+main{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    width: 720px;
+}
+
+h1{
+    color: #0A11A3;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline #1D27F0;
+}
+
+.click:active{
+    background-color: #0A11A3;
+    color: white;
+}
+
+h1#titulo-principal{
+    background-color: #0A11A3;
+    border-radius: 5px;
+    color: #F0C61D;
+    margin: auto;
+    padding: 5px;
+    width: fit-content;
+    font-size: 3em;
+    text-align: center;
+}
+
+p.texto{
+    text-align: justify;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parte 1</title>
+    <style>
+
+        form > label{
+            display: none;
+        }
+
+        form:hover > label {
+            display: block;
+        }
+
+        a{
+            display: block;
+            margin: auto;
+            padding: 5px;
+            width: fit-content;
+        }
+
+        input#pass{
+            display: block;
+            border: 1px solid #0a11a3;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="titulo-principal">Desafio 01</h1>
+        <h1>Instruções:</h1>
+        <p class="texto">Primeiramente você deverá em cada página encontrar o link para seguir o desafio. Serão quatro desafios e espero que cumpra todos. Esse será simples, apenas acerte a senha:</p>
+        <form>
+            Digite a senha aqui:
+            <input type="text" id="pass">
+            <label for="pass"><a href="page06.html" hreflang="pt-br" target="_self" rel="next">Próximo desafio!</a></label>
+        </form>
+    </main>
+</body>
+</html>

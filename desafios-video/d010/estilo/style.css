@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*
+#4C5948
+#88DF72
+#B8D9B0
+#36592E
+#8DA686
+*/
+
+:root{
+    --cor0: #4C5948;
+    --cor2: #36592E;
+    --cor3: #8DA686;
+    --cor4: #88DF72;
+    --cor5: #B8D9B0;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor5);
+}
+
+a.externo::after{
+    content: '\00A0\1F4CE';
+}
+
+header{
+    background-image: linear-gradient(180deg, var(--cor3) 50%, var(--cor0) 90%);
+    text-align: center;
+    padding-top: 40px;
+    min-height: 150px;
+}
+
+header > h1{
+    color: snow;
+    margin-bottom: 20px;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 3em;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+header > p{
+    color: snow;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    font-size: 1.2em;
+    max-width: 500px;
+    text-shadow: 2px 1px 0px rgb(0, 0, 0, 0.5);
+}
+
+nav{
+    background-color: var(--cor0);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.45);
+    padding: 5px;
+    text-align: center;
+}
+
+nav a{
+    color: var(--cor3);
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 20px;
+    transition-duration: 0.25s;
+}
+
+nav a:hover{
+    border-radius: 5px;
+    background-color: var(--cor5);
+    color: var(--cor1);
+    padding: 1px 1px 1px 1px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+main{
+    background-color: snow;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 800px;
+    min-width: 320px;
+}
+
+div.video{
+    background-color: var(--cor0);
+    margin: 21px -20px;
+    padding: 25px;
+    padding-bottom: 55.93%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main h1{
+    display: block;
+    font-weight: normal;
+    color: var(--cor0);
+    font-size: 2em;
+    font-family: var(--font-android);
+    background-image: linear-gradient(90deg, var(--cor5), transparent);
+    padding: 3px;
+}
+
+main h2{
+    font-size: 1.5em;
+    font-weight: normal;
+    color: var(--cor2);
+    font-family: var(--font-android);
+    text-indent: 0.5em;
+}
+
+main p{
+    margin: 15px 0px;
+    text-indent: 30px;
+    font-size: 1.05em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+main strong{
+    color: var(--cor2);
+    font-weight: bolder;
+}
+
+main a{
+    border-radius: 10px 20px;
+    background-color: var(--cor4);
+    color: var(--cor0);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 6px;
+    transition-duration: 0.5s;
+}
+
+main a:hover{
+    border-radius: 10px 20px;
+    background-color: var(--cor0);    
+    color: var(--cor5);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 6px;
+}
+
+main img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+main img.pq{
+    max-width: 350px;
+}
+
+aside{
+    margin: 20px 0px;
+    border-radius: 10px 20px;
+    padding: 10px;
+    background-color: var(--cor5);
+    box-shadow: -3px 3px 5px rgb(0 0 0 / 50%)
+}
+
+aside > h3{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    padding: 5px;
+    border-radius: 10px 20px 0px 0px;
+    margin: -10px -10px 0px -10px;
+}
+
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+    line-height: 1.5em;
+    list-style-type: '\1F4F2\00A0\00A0';
+}
+
+footer{
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 3px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.25s;
+}
+
+footer a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+    color: var(--cor5);
+}

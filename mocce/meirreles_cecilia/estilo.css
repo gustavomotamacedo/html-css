@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --cor1: #F09444;
+    --cor2: #D99732;
+    --cor3: #F8C039;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-image: url("Fundo.jpg");
+    background-color: var(--cor3);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', serif;
+}
+
+header{
+    background-color: snow;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    line-height: 3em;
+    font-family: 'Lobster', cursive;
+    padding-top: 50px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+header > h1{
+    font-size: 5em;
+    font-weight: none;
+}
+
+header > p{
+    margin-top: 30px;
+    font-size: 2.5em;
+}
+
+article{
+    max-width: 1980px;
+    min-width: 320px;
+    background-color: snow;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+article h1.h1R{
+    text-align: right;
+    margin-bottom: 21px;
+}
+
+article h1.h1L{
+    text-align: left;
+    margin-bottom: 21px;
+}
+
+article > p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+article img.imgL{
+    position: relative;
+    width: 170px;
+    float: left;
+    margin-right: 2em;
+    margin-top: -2%;
+}
+
+article img.imgR{
+    position: relative;
+    width: 150px;
+    float: right;
+    margin-left: 2em;
+    margin-top: 0%;
+}
+
+aside p{
+    margin-top: 20px;
+    font-style: 0.2em;
+    text-align: right;
+}
+
+footer{
+    background-color: black;
+    color: var(--cor3);
+    padding: 8px;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.espaço{
+    background-color: #f0944488;
+    height: 200px;
+}
+
+#poema{
+    columns: 2;
+}
