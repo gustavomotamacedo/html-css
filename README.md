@@ -4,3 +4,4 @@
 Estou na luta pra aprender a criar e estilizar sites, e agora vou aprender sobre criar e gerenciar repositórios!
 
 <a href="https://gustavomotamacedo.github.io/html-css/mocce/daniel/index.html" target="_self" hreflang="pt-br" rel="next">Site para Daniel Mota </a>
+<a href="https://gustavomotamacedo.github.io/html-css/mocce/mocce008/page.html" target="_self" hreflang="pt-br" rel="next">Desabafe aqui</a>
