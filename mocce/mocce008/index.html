@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leia-me se for capaz</title>
+    <style>
+
+        *{
+            margin: none;
+        }
+
+        :root{
+            --cor1: #4B2975;
+            --cor2: #5F4C75;
+            --cor3: #7D44C2;
+            --cor4: #9C55F5;
+            --cor5: #C7A0F7;
+        }
+
+        body{
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            background-color: var(--cor2);
+        }
+
+        main{
+            max-width: 600px;
+            min-width: 300px;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        section#textos{
+            padding: 21px;
+            background-color: white;
+        }
+
+        section#textos p{
+            width: 100%;
+            height: fit-content;
+            margin-bottom: 21px;
+            background-color: #c7a0f785;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: 400;
+            text-align: justify;
+            font-size: 1.3em;
+        }
+
+        textarea#post{
+            display: block;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 21px;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="textos">
+            <textarea id="post" oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1' onclick="this.value = ''">No que você está pensando?</textarea>
+            <input type="button" value="New" onclick="newText()">
+            <input type="button" value="Delete" onclick="deleteText()">
+            <hr>
+        </section>
+    </main>
+    <script>
+        var n = 1
+
+        function boxAjust(){
+            if(this.scrollHeight > this.offsetHeight){
+                this.rows += 1
+            } else{
+                this.rows
+            }
+        }
+
+        function newText(){
+            var textBox = document.body.querySelector(`textarea#post`)
+            var escreva = textBox.value
+            var sessao = document.body.querySelector("section#textos")
+            sessao.innerHTML += `<p id="texto${n}">${escreva}</p>`
+            n ++
+        }
+
+        function deleteText(){
+            var sessao = document.body.querySelector("section#textos")
+            var texto = sessao.querySelector(`p#texto${n-1}`)
+            var linha = sessao.querySelector(`hr#texto${n-1}`)
+            texto.remove()
+            n--
+        }
+
+    </script>
+</body>
+</html>
