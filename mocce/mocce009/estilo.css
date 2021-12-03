@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    text-align: justify;
+}
+
+main{
+    max-width: 700px;
+    min-width: 300px;
+    margin-top: 21px;
+    margin: auto;
+    background-color: white;
+}
+
+#conteudo{
+    display: block;
+    float: left;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    background-repeat: repeat-y;
+    width: 100%;
+}
+
+#esq{
+    float: left;
+    max-width: 240px;
+    min-width: 100px;
+    margin-right: 21px;
+}
+
+img#foto-aluno{
+    display: block;
+    max-width: 100px;
+    min-width: 50px;
+    margin: auto;
+    margin-bottom: 21px;
+    border-radius: 10px;
+}
+
+nav#menu{
+    margin-top: 21px;
+}
+
+nav#menu a{
+    display: block;
+    text-decoration: none;
+}
+
+nav#menu ul{
+    list-style-type: square;
+}
+
+#cen{
+    float: left;
+    max-width: 300px;
+    min-width: 100px;
+    margin-right: 21px;
+}
+
+p#saudacao{
+    margin-bottom: 21px;
+}
+
+p#saudacao span{
+    font-size: 1.5em;
+    color: blue;
+}
+
+div#recados{
+    max-width: 290px;
+    min-width: 90;
+    margin-bottom: 21px;
+}
+
+div.recado{
+    float: left;
+    text-align: justify;
+}
+
+div.recado p{
+    float: left;
+    max-width: 240px;
+    min-width: 65px;
+    word-break: break-all;
+}
+
+span.data{
+    display: block;
+    margin: 5px 0px 5px;
+    color: grey;
+    font-size: 0.8em;
+}
+
+img#foto-aluno-recado{
+    float: left;
+    max-width: 40px;
+    min-width: 15px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+#dir{
+    float: left;
+    max-width: 180px;
+    min-width: 100px;
+}
+
