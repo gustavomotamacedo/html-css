@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller | By: mocce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <p>Digite o número de faces: </p>
+            <input type="number" value="" name="faces" id="faces">
+        </div>
+        <div>
+            <p>Digite a quantidade de dados: </p>
+            <input type="number" value="" name="dados" id="dados">
+        </div>
+        <input type="button" value="ROLAR" id="botao" onclick="rolarDados()">
+        <div id="res">Resultado das rolagens aqui!</div>
+    </main>
+    <script>
+        function rolarDados(){
+            var stringFaces = document.body.querySelector("input#faces").value
+            var stringDados = document.body.querySelector("input#dados").value
+            var faces = Number(stringFaces)
+            var dados = Number(stringDados)
+            var showRes = document.body.querySelector("div#res")
+            showRes.innerHTML = ""
+            for (let i = 1; i <= dados; i++) {
+                let res = parseInt(Math.random() * (faces + 1))
+                if(res < 1){
+                    res++
+                    showRes.innerHTML += `<p>O seu ${i}º resultado é ${res} </p>`
+                }else{
+                    showRes.innerHTML += `<p>O seu ${i}º resultado é ${res} </p>`
+                }
+            }
+        }
+    </script>
+</body>
+</html>
