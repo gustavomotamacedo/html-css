@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@keyframes gradiente {
+    0%{
+        background-position: 0% 0%;
+    }
+    25%{
+        background-position: 100% 50%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    75%{
+        background-position: 100% 50%;
+    }
+    0%{
+        background-position: 0% 0%;
+    }
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("imagens/ednaldo-agiota.png");
+    background-attachment: fixed;
+    background-size: 200px;
+    animation: gradiente 15s ease infinite;
+}
+
+main{
+    color: white;
+    background-image: linear-gradient(45deg, red, green, blue);
+    background-size: 400%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px 30px;
+    width: 600px;
+    margin: auto;
+    margin-top: 21px;
+    box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.5);
+    animation: gradiente 15s ease infinite;
+}
+
+div#conteudo{
+    margin: auto;
+    width: fit-content;
+}
+
+h1{
+    margin: 21px 0px 21px 0px;
+    text-align: center;
+}
+
+p{
+    margin: 21px 0px 21px 0px;
+    text-align: center;
+}
+
+div#valor{
+    width: fit-content;
+    margin: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+div#texto{
+    display: inline-block;
+    border: 2 solid transparent;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    padding: 1 2;
+    width: 169px;
+    height: 15px;
+    text-align: center;
+}
+
+div#button{
+    margin: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    width: fit-content;
+}
+
+input#butaum{
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 169px;
+    height: 40px;
+}

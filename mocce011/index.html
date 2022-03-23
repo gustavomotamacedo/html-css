@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor de Gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="conteudo">
+            <h1>CALCULADORA DE GASTOS</h1>
+            <p>Valor a ser recebido</p>
+            <div id="valor"><input type="number" name="valor" id="valor" value="0"></div>
+            <div id="texto">10%</div>
+            <div id="texto">30%</div>
+            <div id="texto">60%</div>
+            <div id="resultados">
+                <input type="number" name="dez" id="dez">
+                <input type="number" name="trinta" id="trinta">
+                <input type="number" name="sessenta" id="sessenta">
+            </div>
+            <div id="texto">Economizar</div>
+            <div id="texto">Gastos para lazer</div>
+            <div id="texto">Gastos necessários</div>
+            <div id="button"><input id="butaum" type="button" value="CALCULAR" onclick="calc()"></div>
+        </div>
+    </main>
+    <script>
+        var valor = document.querySelector('input#valor')
+        var d, t, s
+        var dez = document.querySelector('input#dez')
+        var trinta = document.querySelector('input#trinta')
+        var sessenta = document.querySelector('input#sessenta')
+        valor.addEventListener("keyup", calcEnter)
+        function calcEnter(){
+            if(event.code == "Enter"){
+                calc()
+            }
+        }
+        function calc(){
+            d = valor.value * 0.1
+            t = valor.value * 0.3
+            s = valor.value * 0.6
+            dez.value = d
+            trinta.value = t
+            sessenta.value = s
+            valor.value = ""
+        }
+    </script>
+</body>
+</html>
