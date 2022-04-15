@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Zilla Slab Highlight', cursive;
+    --cor1: #AB59F0;
+    --cor2: #F0B34F;
+    --cor3: #34A35E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    margin-bottom: 21px;
+    background-color: var(--cor3);
+    text-align: center;
+    padding: 10px;
+}
+
+header > h1{
+    margin-bottom: 21px;
+    color: var(--cor2);
+    font-family: var(--font2);
+    font-weight: normal;
+    font-size: 4em;
+}
+
+header > h2{
+    margin-bottom: 21px;
+    color: var(--cor2);
+    font-family: var(--font1);
+    font-weight: normal;
+    font-size: 2em;
+}
+
+header > button{
+    font-size: 0.8em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    padding: 6px;
+    border: none;
+}
+
+header > button:hover{
+    font-size: 1em;
+    background-color: var(--cor2);
+    transition-duration: 0.25s;
+}
+
+main{
+    width: 85vw;
+    height: 85vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+#cont{
+    font-family: var(--font1);
+    font-size: 1.2em;
+    color: var(--cor2);
+    text-align: center;
+    width: 100%;
+    background-color: var(--cor1);
+}
+
+#btn{
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
