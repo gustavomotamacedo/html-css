@@ -6,6 +6,7 @@ const contador = document.querySelector("#cont")
 const main = document.querySelector("main")
 const resetar = document.querySelector("#reset")
 
+
 var c = 0
 contador.innerHTML = `Clicks: ${c}` 
 

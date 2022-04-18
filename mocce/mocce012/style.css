@@ -69,6 +69,7 @@ main{
 #cont{
     font-family: var(--font1);
     font-size: 1.2em;
+    text-shadow: 1px 1px black;
     color: var(--cor2);
     text-align: center;
     width: 100%;
