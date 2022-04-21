@@ -11,15 +11,18 @@ var c = 0
 contador.innerHTML = `Clicks: ${c}` 
 
 facil.addEventListener('mousedown', function(e) {
-    botao.style.transitionDuration = "3s"
+    botao.style.transitionDuration = "4s"
+    botao.innerHTML = "ME MAMA"
 })
 
 medio.addEventListener('mousedown', function(e) {
     botao.style.transitionDuration = "1s"
+    botao.innerHTML = "SÓ O BÁSICO"
 })
 
 dificil.addEventListener('mousedown', function(e) {
     botao.style.transitionDuration = "0.5s"
+    botao.innerHTML = "DUVIDO"
 })
 
 resetar.addEventListener("mousedown", function(e) {
@@ -31,8 +34,8 @@ resetar.addEventListener("mousedown", function(e) {
 })
 
 botao.addEventListener('mouseover', function(e)  {
-    let posX = Math.random() * 75
-    let posY = Math.random() * 75
+    var posX = Math.random() * 75
+    var posY = Math.random() * 75
     if(botao.style.transitionDuration == 0){
         alert("Selecione a dificuldade!")
     }else{
