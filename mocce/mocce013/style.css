@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: brown;
+    padding: 10px;
+    width: 100%;
+    height: 125px;
+}
+
+header > div#logo {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+header > div#empresa {
+    color: white;
+    height: 100%;
+    text-align: right;
+}
+
+.paralax {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+    padding: 100px;
+}
+
+#img1 {
+    background-image: url('imagens/fundo-640.jpg');
+}
+
+#img2 {
+    background-image: url('imagens/japao-640.jpg');
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.75); 
+    width: 75vw;
+    margin: auto;
+    text-align: justify;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 1.5vh;
+    text-align: center;
+}
+
+footer > a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+footer > a:hover {
+    color: rgb(197, 168, 197);
+    font-size: 1.8vh;
+}
