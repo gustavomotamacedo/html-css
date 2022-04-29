@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    line-height: 1.5em;
+    width: 400px;
+}
+
+tr, td, th {
+    margin: 1px;
+}
+
+tr {
+    background-color: rgb(198, 198, 255);
+}
+
+th {
+    background-color: rgb(112, 112, 255);
+}
+
+td {
+    margin: 0px;
+}

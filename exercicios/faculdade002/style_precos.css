@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+th, td {
+    padding: 2px;
+}
+
+th {
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+
+td {
+    background-color: rgb(240, 240, 240);
+    border: 2px solid gray;
+    text-align: center;
+}
+
+.lRight {
+    text-align: right;
+}
