@@ -45,7 +45,7 @@ botao.addEventListener('mouseover', function(e)  {
     console.log(`X: ${posX} e Y: ${posY}`)
 })
 
-botao.addEventListener('mousedown', function() {
+botao.addEventListener('mouseup', function() {
     c += 1
     contador.innerHTML = `Clicks: ${c}` 
 })
