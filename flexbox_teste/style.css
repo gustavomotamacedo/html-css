@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Substituir por roboto*/
+}
+
+header {
+    /*Configurações do flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    /*Configurações do flexbox*/
+
+    background-color: blue;
+    height: 100px;
+    margin-bottom: 21px;
+}
+
+header > h1 {
+    flex: 4;
+
+    color: white;
+}
+
+#logo_header {
+    flex: 1;
+
+    background: transparent url("imagens/icon/android-chrome-192x192.png") center center no-repeat;
+    background-size: contain;
+    width: 75px;
+    height: 75px;
+}
+
+main {
+    max-width: 600px;
+    height: 100%;
+    margin: auto;
+}
+
+main div, h1, h2, p {
+    margin-bottom: 21px;
+}
+
+.hScroll {
+    display: flex;
+    overflow-x: auto;
+}
+
+.hScroll > img:nth-child(even) {
+    transform: rotate(90deg);
+}
+
+.hScroll > img:nth-child(odd) {
+    transform: rotate(180deg);
+}
+
+.hScroll > img {
+    margin-right: 15px;
+}
+
+/*Scrollbar customizada*/
+.hScroll::-webkit-scrollbar {
+    width: 15px;
+}
+
+.hScroll::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.hScroll::-webkit-scrollbar-thumb {
+    background-color: #ff2424;
+    border-radius: 15px;
+    border: 5px none #ffffff;
+}
+/*Scrollbar customizada*/
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+    /*posicionando footer no fim da pagina*/
+    bottom: 0;
+    position: fixed;
+    /*posicionando footer no fim da pagina*/
+}
