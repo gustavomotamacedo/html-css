@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+#jorge {
+    border: 1px solid black;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
